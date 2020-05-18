@@ -8,6 +8,7 @@ public class Player {
     private int positionOfPlayer = 0;
 
     public Player() {
+
     }
 
     public void changePlayersPosition(){

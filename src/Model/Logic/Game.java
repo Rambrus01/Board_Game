@@ -1,12 +1,16 @@
 package Model.Logic;
 
 import Model.Deck.Deck;
+import Model.Player.Player;
 
 public class Game {
 
-    Deck deckManager = new Deck();
+    private Deck deckManager = new Deck();
+    private Player playerManager = new Player();
 
     public void run (){
+
+
 
     }
 }
