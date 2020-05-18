@@ -1,6 +1,7 @@
 package Model.Deck;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class Deck {
     // This class will manage the deck, where the players will be drawing from.
@@ -11,6 +12,7 @@ public class Deck {
 
     public Deck() {
         this.createDeck();
+        this.shuffleDeck();
     }
 
     //Getters
@@ -19,9 +21,14 @@ public class Deck {
     }
 
     public void createDeck() {
-        for (int index = 0; index < valueofCard.length; index++) {
-            deck.add(new Card(valueofCard[index]));
+        // Cards are getting value here.
+        for (int value : valueofCard) {
+            deck.add(new Card(value));
         }
+    }
+
+    public void shuffleDeck() {
+        Collections.shuffle(deck);
     }
 
 }
