@@ -17,9 +17,7 @@ public class Game {
             String hit = input.next();
 
             if (hit.equals("r")){
-                int dice = (int)(Math.random() * 6 + 1);
-                System.out.println(dice);
-
+                playerManager.changePlayersPosition();
             }
         }
 
