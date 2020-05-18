@@ -23,7 +23,7 @@ public class Deck {
     public void createDeck() {
         // Cards are getting value here.
         for (int value : valueofCard) {
-            deck.add(new Card(value));
+            deck.add(new Card(value, Card.Effect.MOVE));
         }
     }
 
